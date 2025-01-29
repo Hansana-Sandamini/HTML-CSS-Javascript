@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-Tables</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+    <br/>
+    <strong>===Simple Table Structure===</strong>
+    <br/>
+    <br/>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kamal</td>
+                <td>Perera</td>
+                <td>40</td>
+                <td>1234567890</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Cena</td>
+                <td>40</td>
+                <td>7777777777</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br/>
+    <hr/>
+    <strong>Table with just tr and td</strong>
+    <br/>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Name</td>
+            <td>Name</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Name</td>
+            <td>Name</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Name</td>
+            <td>Name</td>
+        </tr>
+    </table>
+
+    <br/>
+    <hr/>
+
+    <strong>===Table with Colspan===</strong>
+    <br/>
+    <table style="width: 400px; text-align: center;">
+        <tr style="height: 100px;">
+            <th colspan="2">1</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+        <tr style="height: 100px;">
+            <th colspan="3">5</th>
+            <th>8</th>
+        </tr>
+        <tr style="height: 100px;">
+            <th>9</th>
+            <th colspan="3">10</th>
+        </tr>
+        <tr style="height: 100px;">
+            <th>13</th>
+            <th>14</th>
+            <th>15</th>
+            <th>16</th>
+        </tr>
+    </table>
+
+    <br/>
+    <hr/>
+
+    <strong>===Table with rowspan===</strong>
+    <table style="width: 400px; text-align: center;">
+        <tr style="height: 100px;">
+            <th rowspan="2">1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+        <tr style="height: 100px;">
+            <th>6</th>
+            <th rowspan="3">7</th>
+            <th>8</th>
+        </tr>
+        <tr style="height: 100px;">
+            <th>9</th>
+            <th>10</th>
+            <th>12</th>
+        </tr>
+        <tr style="height: 100px;">
+            <th>13</th>
+            <th>14</th>
+            <th>16</th>
+        </tr>
+    </table>
+</body>
+</html>

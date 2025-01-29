@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-4</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 400px; text-align: left;">
+
+        <tr style="height: 50px;">
+            <th colspan="4">
+                Personal Information
+            </th>
+        </tr>
+
+        <tr style="height: 50px;">
+            <th>
+                <label for="name">Name:</label>
+            </th>
+            <th colspan="3">
+                <input type="text" placeholder="Enter name here" />
+            </th>
+        </tr>
+
+        <tr style="height: 50px;">
+            <th>
+                <label for="age">Age:</label>
+            </th>
+            <th colspan="3">
+                <input type="number" placeholder="Enter age here" value="18" />
+            </th>
+        </tr>
+
+        <tr style="height: 50px;">
+            <th rowspan="3">
+                <label for="name">Address:</label>
+            </th>
+            <th>
+                <label for="name">Street:</label>
+            </th>
+            <th colspan="2">
+                <input type="text" placeholder="Street" />
+            </th>
+        </tr>
+
+        <tr style="height: 50px;">
+            <th>
+                <label for="name">City:</label>
+            </th>
+            <th colspan="2">
+                <input type="text" placeholder="City" />
+            </th>
+        </tr>
+
+        <tr style="height: 50px;">
+            <th>
+                <label for="name">Zip Code:</label>
+            </th>
+            <th colspan="2">
+                <input type="text" placeholder="Zip Codee" />
+            </th>
+        </tr>
+
+        <tr style="height: 50px;">
+            <th colspan="4">
+                <label for="name">Additional Information</label>
+            </th>
+        </tr>
+
+        <tr style="height: 50px; text-align: center;">
+            <th colspan="4">
+                <textarea 
+                    name="message" 
+                    id="message" 
+                    placeholder="Enter your message" 
+                    rows="4"
+                    cols="90">
+                </textarea>
+            </th>
+        </tr>
+
+        <tr style="height: 50px;">
+            <th colspan="4">
+                <button>Submit</button>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>

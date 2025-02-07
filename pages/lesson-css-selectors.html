@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-CSS-Selectors</title>
+    <style>
+        /* === 1. Element Selector ===< */
+        h2 {
+            color: brown;
+        }
+
+        /* === 2. Class Selector === */
+        .heading {
+            color: blue;
+        }
+
+        /* === 3. ID Selector === */
+        #title {
+            color: dimgrey;
+        }
+
+        /* === 4. Attribute Selector === */
+        a [target="_blank"] {
+            color: red;
+        }
+
+        /* === 5. Descendant Selector (space) === */
+        div p {
+            color: orange;
+        }
+
+        /* === 6. Child Selector (>) === */
+        div > p {
+            color: green;
+        }
+
+        /* === 7. Adjacent Sibling Selector (+) === */
+        h2 + p {
+            color: blue;
+        }
+
+        /* === 8. General Sibling Selector (~) === */
+        h1 ~ p {
+            color: brown;
+        }
+
+        /* === 9. Pseudo Class Selector === */
+        /* li:first-child {
+            color: red;
+        }
+        li:last-child {
+            color: blue;
+        }li:nth-child(3) {
+            color: green;
+        } */
+
+        /* li:nth-child(odd) {
+            color: red;
+        }
+        li:nth-child(even) {
+            color: blue;
+        } */
+
+        ul:hover {
+            background-color: blueviolet;
+        }
+        p:hover {
+            background-color: aqua;
+        }
+
+
+        /* === 10. Pseudo Elements Selector === */
+        p::first-letter {
+            color: blue;
+        }
+        p::first-line {
+            color: darkmagenta;
+        }
+        p::before {
+            content: "Hello";
+            color: darkorange;
+        }
+        p::after {
+            content: "!!!";
+            color: violet;
+        }
+
+
+        /* === 11. Grouping Selector (,) === */
+        h1, h2, h3 {
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+
+    <strong>=== 1. Element Selector ===</strong>
+    <h2>Hello World!</h2>
+    <h2>Hey There</h2>
+
+    <strong>=== 2. Class Selector ===</strong>
+    <h1 class="heading">Heading 1</h1>
+    <h2 class="heading">Heading 2</h2>
+    <h3 class="heading">Heading 3</h3>
+    <h4 class="heading">Heading 4</h4>
+    <p class="heading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, repellat?</p>
+
+    <strong>=== 3. ID Selector ===</strong>
+    <h2 id="title">My Title</h2>
+    <h3 id="title">My Title</h3>
+
+    <strong>=== 4. Attribute Selector ===</strong>
+    <br/>
+    <a href="https://www.google.com" target="_blank">Click Here</a>
+    <br/>
+ 
+    <strong>=== 5. Descendant Selector (space) ===</strong>
+    <p>Hey There!!!</p>
+    <div>
+        <p>One</p>
+        <p>Two</p>
+        <p>Three</p>
+    </div>
+
+    <strong>=== 6. Child Selector (>) ===</strong>
+    <div>
+        <p>This paragraph is direct child of div.</p>
+        <section>
+            <p>This paragraph is inside a section, not a direct child of div.</p>
+        </section>
+    </div>
+
+    <strong>=== 7. Adjacent Sibling Selector (+) ===</strong>
+    <h2>Adjacent</h2>
+    <p>Hello One</p>
+    <p>Hello Two</p>
+
+    <strong>=== 8. General Sibling Selector (~) ===</strong>
+    <h1>Main Heading</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div>
+        <p>Hello World!</p>
+    </div>
+
+    <strong>=== 9. Pseudo Class Selector ===</strong>
+    <ul>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, deleniti?s</p>
+
+    <strong>=== 10. Pseudo Elements Selector ===</strong>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit necessitatibus doloremque minus nostrum modi 
+        dolorem aspernatur debitis, libero soluta at laborum eos id. Officiis neque incidunt ullam odit explicabo harum 
+        aperiam accusamus eligendi reiciendis iusto perspiciatis sint, sequi id reprehenderit saepe illo similique eaque 
+        enim eos aut. Enim, sequi quis.
+    </p>
+
+    <strong>=== 11. Grouping Selector (,) ===</strong>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+</body>
+</html>

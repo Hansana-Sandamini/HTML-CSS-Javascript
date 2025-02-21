@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-CSS-Positions</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        #box1 {
+             width: 300px;
+             height: 300px;
+             background-color: cyan;
+             border: 1px solid black;
+
+             /* position: static; */
+
+             /* position: relative;
+             top: 20px;
+             left: 20px; */
+             /* right: 20px;
+             bottom: 20px; */
+/* 
+             position: absolute;
+             top: 10px;
+             left: 10px; */
+
+             /* position: fixed;
+             top: 100px;
+             left: 100px; */
+
+             position: sticky;
+             top: 0;
+             left: 0;
+         }
+         #box2 {
+             width: 100px;
+             height: 100px;
+             background-color: red;
+             border: 1px solid black;
+
+             /* position: relative;
+             top: 10px;
+             left: 10px; */
+
+             position: absolute;
+             top: 20px;
+             left: 20px;
+         }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+
+    <div id = "box1">
+        <div id = "box2"></div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorum error, voluptates corporis, debitis vero voluptatum ipsum ratione veniam 
+        velit atque quasi alias inventore aperiam quam, neque nobis. Quasi ipsam dignissimos inventore, impedit expedita ad tempora necessitatibus quam nulla 
+        animi aperiam ut delectus hic? Possimus ducimus iusto voluptatibus vel sit necessitatibus eligendi, voluptatem cupiditate, eveniet odit debitis, id fugit! 
+        Nam autem commodi placeat amet inventore facilis, possimus iusto laborum quasi aspernatur cum, consequuntur perferendis voluptatem magni ab veniam! 
+        At excepturi dolorem cumque nobis accusantium nostrum ratione eum alias, magni, cum quos corrupti. Iusto ad at nisi provident, laudantium repellat nobis?
+    </p>
+</body>
+</html>

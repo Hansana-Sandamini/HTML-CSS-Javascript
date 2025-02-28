@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-12</title>
+    <style>
+        body {
+            background-color: moccasin;
+        }
+
+        .dot {
+            width: 5vh;
+            height: 5vh;
+            border: 1px solid black;
+            border-radius: 100%;
+            background-color: black;
+
+            animation: down-up 2s ease-in-out infinite 1s;
+        }
+
+        .dot-1 {
+            animation: down-up 2s ease-in-out infinite;
+        }
+        .dot-2 {
+            animation: down-up 2s ease-in-out infinite 0.25s;
+        }
+        .dot-3 {
+            animation: down-up 2s ease-in-out infinite 0.5s;
+        }
+        .dot-4 {
+            animation: down-up 2s ease-in-out infinite 0.75s;
+        }
+        .dot-5 {
+            animation: down-up 2s ease-in-out infinite 1s;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+        }
+
+        @keyframes down-up {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+        <div class="dot dot-4"></div>
+        <div class="dot dot-5"></div>
+    </div>
+</body>
+</html>

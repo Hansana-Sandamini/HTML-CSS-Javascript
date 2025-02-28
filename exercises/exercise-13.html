@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-13</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 5px;
+            background-color: powderblue;
+        }
+        h1 {
+            text-align: center;
+        }
+        .content{
+            height: 120px;
+            overflow-y: scroll;
+            padding-bottom: 10px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
+        }
+        .card-container {
+            width: 25vh;
+            height: 43vh;
+            border: 1px solid black;
+            border-radius: 15px;
+            background-color: white;
+            margin: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .card-header {}
+
+        .lap-image {
+            padding-left: 5px;
+            padding-top: 15px;
+            padding-right: 15px;
+            width: 24vh;
+            height: 15vh;
+            position: relative;
+            border-radius: 45px;
+        }
+        .btn {
+            width: 24vh;
+            height: 4vh;
+            border-radius: 15px;
+            align-items: center;
+            justify-content: center;
+            margin: 3px;
+        }
+        .btn-buy-now{
+            background-color: blue;
+            color: white;
+        }
+        .btn-add-to-cart{
+            background-color: black;
+            color: white;
+        }
+        .price {
+            padding-left: 200px;
+        }
+        .lap{
+            font-size: 20px;
+            font-weight: 100;
+        }
+        @media screen and (min-width: 0) and (max-width: 575px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 12px;
+            }
+        }
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 12px;
+            }
+        }
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 12px;
+            }
+        }
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Products Gallery</h1>
+
+    <div class="container">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <img class="lap-image" src="/assets/images/lap.jpeg" alt="Laptop-Image">
+                <span class="lap">Laptop</span>
+                <span class="price">$999.99</span>
+            </div>
+            <div class="content"> 
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, porro, blanditiis esse odio hic nemo est, in omnis suscipit voluptates 
+                    id voluptate laudantium alias provident deleniti Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, porro, blanditiis esse odio hic nemo est, in omnis suscipit voluptates 
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-buy-now">Buy Now</button>
+                <button class="btn btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <img class="lap-image" src="/assets/images/lap.jpeg" alt="Laptop-Image">
+                <span class="lap">Laptop</span>
+                <span class="price">$999.99</span>
+            </div>
+            <div class="content"> 
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, porro, blanditiis esse odio hic nemo est, in omnis suscipit voluptates 
+
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-buy-now">Buy Now</button>
+                <button class="btn btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <img class="lap-image" src="/assets/images/lap.jpeg" alt="Laptop-Image">
+                <span class="lap">Laptop</span>
+                <span class="price">$999.99</span>
+            </div>
+            <div class="content"> 
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, porro, blanditiis esse odio hic nemo est, in omnis suscipit voluptates 
+                    id voluptate laudantium alias provident deleniti 
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-buy-now">Buy Now</button>
+                <button class="btn btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <img class="lap-image" src="/assets/images/lap.jpeg" alt="Laptop-Image">
+                <span class="lap">Laptop</span>
+                <span class="price">$999.99</span>
+            </div>
+            <div class="content"> 
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, porro, blanditiis esse odio hic nemo est, in omnis suscipit voluptates 
+                    id voluptate laudantium alias provident deleniti
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-buy-now">Buy Now</button>
+                <button class="btn btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <img class="lap-image" src="/assets/images/lap.jpeg" alt="Laptop-Image">
+                <span class="lap">Laptop</span>
+                <span class="price">$999.99</span>
+            </div>
+            <div class="content"> 
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, porro, blanditiis esse odio hic nemo est, in omnis suscipit voluptates 
+                    id voluptate laudantium alias provident deleniti
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-buy-now">Buy Now</button>
+                <button class="btn btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <img class="lap-image" src="/assets/images/lap.jpeg" alt="Laptop-Image">
+                <span class="lap">Laptop</span>
+                <span class="price">$999.99</span>
+            </div>
+            <div class="content"> 
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, porro, blanditiis esse odio hic nemo est, in omnis suscipit voluptates 
+                    id voluptate laudantium alias provident deleniti
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-buy-now">Buy Now</button>
+                <button class="btn btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <img class="lap-image" src="/assets/images/lap.jpeg" alt="Laptop-Image">
+                <span class="lap">Laptop</span>
+                <span class="price">$999.99</span>
+            </div>
+            <div class="content"> 
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, porro, blanditiis esse odio hic nemo est, in omnis suscipit voluptates 
+                    id voluptate laudantium alias provident deleniti
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-buy-now">Buy Now</button>
+                <button class="btn btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <img class="lap-image" src="/assets/images/lap.jpeg" alt="Laptop-Image">
+                <span class="lap">Laptop</span>
+                <span class="price">$999.99</span>
+            </div>
+            <div class="content"> 
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, porro, blanditiis esse odio hic nemo est, in omnis suscipit voluptates 
+                    id voluptate laudantium alias provident deleniti
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-buy-now">Buy Now</button>
+                <button class="btn btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

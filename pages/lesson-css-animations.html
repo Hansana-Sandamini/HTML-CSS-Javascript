@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-CSS-Animations</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: red;
+
+            /* animation-name: down-up;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-delay: 1s; */
+
+            /* animation: down-up 2s ease-in-out infinite 1s; */
+
+
+            /* animation: background-change 2s ease-in-out infinite 1s; */
+
+            animation: go-around 2s ease-in-out infinite 1s;
+        }
+        /* @keyframes down-up{
+            0% {
+                
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(200px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        } */
+
+        /* @keyframes background-change {
+            0% {
+                background-color: red;
+            }
+            50% {
+                background-color: blue;
+            }
+            100% {
+                background-color: red;
+            }
+        } */
+
+        /* @keyframes background-change{
+            0% {
+                background-color: red;
+            }
+            25% {
+                background-color: peru;
+            }
+            50% {
+                background-color: blue;
+            }
+            75% {
+                background-color: aqua;
+            }
+            100% {
+                background-color: red;
+            }
+        } */
+
+        /* @keyframes background-change {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: blue;
+            }
+        } */
+
+        /* @keyframes go-around {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(200px);
+            } 
+            50% {
+                transform: translateX(200px) translateY(200px);
+            } 
+            75% {
+                transform: translateX(0) translateY(200px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        } */
+
+        @keyframes go-around {
+            0%, 100%  {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(200px);
+            } 
+            50% {
+                transform: translateX(200px) translateY(200px);
+            } 
+            75% {
+                transform: translateX(0) translateY(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

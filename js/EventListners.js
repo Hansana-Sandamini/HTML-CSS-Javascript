@@ -1,6 +1,8 @@
 console.log("EventListners.js is loaded....");
 
-const box = document.querySelector('.box');
+// const box = document.querySelector('.box');
+
+// ================================== Mouse Events ===================================
 
 // ====single click event====
 // box.addEventListener('click', function () {
@@ -33,6 +35,45 @@ const box = document.querySelector('.box');
 // })
 
 // ====Mouse-out event=====
-box.addEventListener('mouseout', function() {
-    console.log("Mouse Out...");
+// box.addEventListener('mouseout', function() {
+//     console.log("Mouse Out...");
+// })
+
+
+// ====================================== Keyboard Events ========================================
+
+// ==== Key-down event ====
+
+// let input = document.getElementById("input");
+// input.addEventListener('keydown', function () {
+//     console.log("Key Down...");
+// })
+
+// let input = document.getElementById("input");
+// input.addEventListener('keydown', function (event) {
+//     console.log(event.key);
+// })
+
+// let input = document.getElementById("input");
+// input.addEventListener('keydown', function (event) {
+//     if (event.key =='Enter') {
+//         alert("Enter Pressed");
+//     }
+// })
+
+// ==== Key-up event ====
+// let input = document.getElementById("input");
+// input.addEventListener('keyup', function () {
+//     console.log("Key Up...");
+// })
+
+// Example
+input.addEventListener('keydown', function (event) {
+    // console.log(event.keyCode);
+    let keyCode = event.keyCode;
+
+    if ((keyCode >= 48 && keyCode <= 57) || (keyCode >= 96 && keyCode <= 105)) {
+        return;
+    }
+    event.preventDefault();
 })

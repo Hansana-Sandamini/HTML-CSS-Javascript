@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-Form-Validations</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+        }
+        .form {
+            border: 1px solid black;
+            width: 500px;
+            height: auto;
+            padding: 10px;
+        }
+        input {
+            width: 470px;
+            margin: 10px;
+            height: 50px;
+            margin-bottom: 30px;
+        }
+        label {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            font-size: 15px;
+        }
+        form > h2 {
+            margin-left: 10px;
+        }
+        .error {
+            color: red;
+            margin-top: 2px;
+        }
+        .table-container {
+            max-width: 600px;
+            margin: 30px auto;
+            border: 1px solid black;
+            padding: 12px;
+            border-radius: 12px;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: navy;
+            color: white;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+        <h2>Customer Registration</h2>
+        <label for="fullName">Full Name </label><br/>
+        <input type="text" name="fullName" id="fullName">
+        <span class="error" id="fullNameError"></span>
+        <br/>
+        <label for="email">Email </label><br/>
+        <input type="text" name="email" id="email">
+        <span class="error" id="emailError"></span>
+        <br/>
+        <label for="password">Password </label><br/>
+        <input type="text" name="password" id="password">
+        <span class="error" id="passwordError"></span>
+        <br/>
+        <label for="confirmPassword">Confirm Password </label><br/>
+        <input type="text" name="confirmPassword" id="confirmPassword">
+        <span class="error" id="confirmPasswordError"></span>
+        <br/>
+        <button type="submit">Register</button>
+    </form>
+
+    <div class="table-container">
+        <h2>Registered Customers</h2>
+        <table id="user-table">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        let usersArray = [];
+        $(document).ready(function(){
+          $(".form").submit(function(event){
+            event.preventDefault();
+
+            if (isValidated()) {
+                let user = {
+                    fullName: $("#fullName").val(),
+                    email: $("#email").val(),
+                    password: $("#password").val()
+                }
+                usersArray.push(user);
+                addToTable(user);
+
+                $(".form")[0].reset();
+            }
+            
+            function addToTable(user) {
+                let newRow = `<tr>
+                    <td>${user.fullName}</td>
+                    <td>${user.email}</td>
+                </tr>`;
+                $("#user-table tbody").append(newRow);
+            }
+
+            function isValidated() {
+                let fullName = $("#fullName").val();
+                let email = $("#email").val();
+                let password = $("#password").val();
+                let confirmPassword = $("#confirmPassword").val();
+                let isValid = true;
+
+                if(!fullName){
+                    $("#fullNameError").text("Enter your full name !");
+                    isValid = false;
+                }else{
+                    $("#fullNameError").text("");
+                }
+
+                if(!email){
+                    $("#emailError").text("Enter your email !");
+                    isValid = false;
+                }else{
+                    $("#emailError").text("");
+                }
+
+                if(!password){
+                    $("#passwordError").text("Enter your password !");
+                    isValid = false;
+                }else{
+                    $("#passwordError").text("");
+                }
+
+                if(!confirmPassword ){
+                    $("#confirmPasswordError").text("Enter your password !");
+                    isValid = false;
+                }else if (password !== confirmPassword){
+                    $("#confirmPasswordError").text("Passwords do not match !");
+                    isValid = false;
+                }else{
+                    $("#confirmPasswordError").text("");
+                }
+                return isValid;
+                }
+            })
+        })
+    </script>
+</body>
+</html>

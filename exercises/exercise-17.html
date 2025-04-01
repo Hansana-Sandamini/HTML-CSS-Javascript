@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-17</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <script>
+        let boxes = document.querySelectorAll(".box");
+        let currentIndex = 0;
+        function changColor() {
+            boxes.forEach((box) => {
+                box.style.backgroundColor = "white";
+            });
+            boxes[currentIndex].style.backgroundColor = "blue";
+            currentIndex = (currentIndex + 1) % boxes.length; 
+
+            index = (currentIndex) % boxes.length;
+            boxes[index].style.backgroundColor = "red";
+        }
+        setInterval(changColor, 1000);
+    </script>
+</body>
+</html>

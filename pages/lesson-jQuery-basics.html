@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-JQuery-Basics</title>
+</head>
+<body>
+    <h1 id="heading">jQuery Basics</h1>
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias, ratione inventore deserunt ullam nam at voluptatum repellat labore 
+        sunt quidem maiores rem accusantium officia recusandae quisquam praesentium officiis quisquam praesentium officiisquisquam praesentium officiis aliquid
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias, ratione inventore deserunt ullam nam at voluptatum repellat labore 
+        sunt quidem maiores rem accusantium officia recusandae quisquam praesentium officiis quisquam praesentium officiisquisquam praesentium officiis aliquid
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias, ratione inventore deserunt ullam nam at voluptatum repellat labore 
+        sunt quidem maiores rem accusantium officia recusandae quisquam praesentium officiis quisquam praesentium officiisquisquam praesentium officiis aliquid.
+    </p>
+    <p class="paragraph2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias, ratione inventore deserunt ullam nam at voluptatum repellat labore 
+        sunt quidem maiores rem accusantium officia recusandae quisquam praesentium officiis quisquam praesentium officiisquisquam praesentium officiis aliquid
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias, ratione inventore deserunt ullam nam at voluptatum repellat labore 
+        sunt quidem maiores rem accusantium officia recusandae quisquam praesentium officiis quisquam praesentium officiisquisquam praesentium officiis aliquid
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias, ratione inventore deserunt ullam nam at voluptatum repellat labore 
+        sunt quidem maiores rem accusantium officia recusandae quisquam praesentium officiis quisquam praesentium officiisquisquam praesentium officiis aliquid.
+    </p>
+    <button class="btn">Click Here</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log("jQuery is ready....");
+            $("#heading").css("color", "red");
+            $(".paragraph").css("backgroundColor", "aqua");
+            $(".btn").css("backgroundColor", "green").css("color", "white");
+
+            $( ".btn" ).on( "click", function() {
+                // alert( "Button clicked." );
+                // $("p").hide();
+                // $("p").toggle();
+                // $("p").fadeOut();
+                $("p").fadeToggle();
+            });
+
+            $( ".paragraph2" ).on( "mouseenter", function() {
+                $(".paragraph2").css("backgroundColor", "blue");
+            }).on( "mouseleave", function() {
+                $(".paragraph2").css("backgroundColor", "white");
+            });
+        })
+    </script>
+</body>
+</html>
